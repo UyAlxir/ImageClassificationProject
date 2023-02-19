@@ -1,0 +1,16 @@
+** args :
+model  :  SVM
+datasets_path  :  ../datasets/
+dataset  :  FMNIST
+log_path  :  ../log/
+** args 
+
+
+LinearSVC(dual=False)
+
+** FMNIST training data has been read **
+** SVM Model has been fitted to training data **
+** FMNIST testing data has been read **
+** SVM Model has predicted on training data **
+** predicted Accuracy: 84.03% 
+spent time is 0:01:17.616421

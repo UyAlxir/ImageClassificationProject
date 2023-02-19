@@ -1,0 +1,7 @@
+# Default ignored files
+datasets/*.gz
+datasets/*/**
+data.xlsx
+.*/
+ClassificationReports.md
+FinalProject.md

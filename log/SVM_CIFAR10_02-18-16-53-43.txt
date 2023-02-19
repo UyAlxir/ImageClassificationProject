@@ -1,0 +1,16 @@
+** args :
+model  :  SVM
+datasets_path  :  ../datasets/
+dataset  :  CIFAR10
+log_path  :  ../log/
+** args 
+
+
+LinearSVC()
+
+** CIFAR10 training data has been read **
+** SVM Model has been fitted to training data **
+** CIFAR10 testing data has been read **
+** SVM Model has predicted on training data **
+** predicted Accuracy: 28.07% 
+spent time is 0:51:49.357428

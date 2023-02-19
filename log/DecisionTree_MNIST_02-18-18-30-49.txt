@@ -1,0 +1,16 @@
+** args :
+model  :  DecisionTree
+datasets_path  :  ../datasets/
+dataset  :  MNIST
+log_path  :  ../log/
+** args 
+
+
+DecisionTreeClassifier()
+
+** MNIST training data has been read **
+** DecisionTree Model has been fitted to training data **
+** MNIST testing data has been read **
+** DecisionTree Model has predicted on training data **
+** predicted Accuracy: 87.71% 
+spent time is 0:00:18.872370

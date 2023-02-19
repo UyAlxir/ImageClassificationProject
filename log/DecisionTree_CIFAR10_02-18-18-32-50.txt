@@ -1,0 +1,16 @@
+** args :
+model  :  DecisionTree
+datasets_path  :  ../datasets/
+dataset  :  CIFAR10
+log_path  :  ../log/
+** args 
+
+
+DecisionTreeClassifier()
+
+** CIFAR10 training data has been read **
+** DecisionTree Model has been fitted to training data **
+** CIFAR10 testing data has been read **
+** DecisionTree Model has predicted on training data **
+** predicted Accuracy: 26.87% 
+spent time is 0:02:58.098092

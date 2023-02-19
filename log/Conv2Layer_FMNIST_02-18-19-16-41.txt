@@ -1,0 +1,89 @@
+** args :
+do_train  :  True
+do_valid  :  True
+do_test  :  True
+model  :  Conv2Layer
+model_path  :  ../saved_model/
+datasets_path  :  ../datasets/
+dataset  :  FMNIST
+train_batch_size  :  128
+test_batch_size  :  128
+epoch  :  20
+with_cuda  :  True
+lr  :  0.1
+log_path  :  ../log/
+device  :  cuda:0
+** args 
+
+
+Conv2Layer(
+  (conv1): Conv2d(1, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool1): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(4, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool2): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+  (drop): Dropout(p=0.2, inplace=False)
+  (fc): Linear(in_features=784, out_features=10, bias=True)
+)
+
+** training is finished **
+** the classification report of current trained model on the validation dataset is :
+              precision    recall  f1-score   support
+
+           0       0.89      0.82      0.85       630
+           1       0.99      0.96      0.97       584
+           2       0.84      0.81      0.83       602
+           3       0.88      0.90      0.89       605
+           4       0.79      0.83      0.81       633
+           5       0.98      0.97      0.97       591
+           6       0.66      0.70      0.68       565
+           7       0.92      0.97      0.94       555
+           8       0.97      0.97      0.97       616
+           9       0.98      0.95      0.97       619
+
+    accuracy                           0.89      6000
+   macro avg       0.89      0.89      0.89      6000
+weighted avg       0.89      0.89      0.89      6000
+
+** the accuracy score of current trained model on the validation dataset is : 88.73%
+
+** the classification report of best saved model on the validation dataset is :
+              precision    recall  f1-score   support
+
+           0       0.86      0.86      0.86       630
+           1       0.99      0.96      0.97       584
+           2       0.84      0.85      0.84       602
+           3       0.89      0.91      0.90       605
+           4       0.79      0.85      0.82       633
+           5       0.97      0.97      0.97       591
+           6       0.73      0.66      0.69       565
+           7       0.92      0.97      0.94       555
+           8       0.98      0.97      0.97       616
+           9       0.98      0.95      0.97       619
+
+    accuracy                           0.90      6000
+   macro avg       0.89      0.89      0.89      6000
+weighted avg       0.89      0.90      0.89      6000
+
+** the accuracy score of best saved model  on the validation dataset is : 89.50%
+
+** the classification report of best saved model on the testing dataset is :
+              precision    recall  f1-score   support
+
+           0       0.86      0.86      0.86       630
+           1       0.99      0.96      0.97       584
+           2       0.84      0.85      0.84       602
+           3       0.89      0.91      0.90       605
+           4       0.79      0.85      0.82       633
+           5       0.97      0.97      0.97       591
+           6       0.73      0.66      0.69       565
+           7       0.92      0.97      0.94       555
+           8       0.98      0.97      0.97       616
+           9       0.98      0.95      0.97       619
+
+    accuracy                           0.90      6000
+   macro avg       0.89      0.89      0.89      6000
+weighted avg       0.89      0.90      0.89      6000
+
+** the accuracy score of best saved model  on the testing dataset is : 89.51%
+
+spent time is 0:06:51.870009

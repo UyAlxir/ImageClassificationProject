@@ -1,0 +1,16 @@
+** args :
+model  :  DecisionTree
+datasets_path  :  ../datasets/
+dataset  :  FMNIST
+log_path  :  ../log/
+** args 
+
+
+DecisionTreeClassifier()
+
+** FMNIST training data has been read **
+** DecisionTree Model has been fitted to training data **
+** FMNIST testing data has been read **
+** DecisionTree Model has predicted on training data **
+** predicted Accuracy: 78.88% 
+spent time is 0:00:38.006813

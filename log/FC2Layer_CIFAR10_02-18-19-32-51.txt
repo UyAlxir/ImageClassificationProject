@@ -1,0 +1,85 @@
+** args :
+do_train  :  True
+do_valid  :  True
+do_test  :  True
+model  :  FC2Layer
+model_path  :  ../saved_model/
+datasets_path  :  ../datasets/
+dataset  :  CIFAR10
+train_batch_size  :  128
+test_batch_size  :  128
+epoch  :  20
+with_cuda  :  True
+lr  :  0.1
+log_path  :  ../log/
+device  :  cuda:0
+** args 
+
+
+FC2Layer(
+  (fc1): Linear(in_features=3072, out_features=4096, bias=True)
+  (fc2): Linear(in_features=4096, out_features=10, bias=True)
+)
+
+** training is finished **
+** the classification report of current trained model on the validation dataset is :
+              precision    recall  f1-score   support
+
+           0       0.62      0.58      0.60       493
+           1       0.63      0.65      0.64       488
+           2       0.40      0.43      0.41       479
+           3       0.38      0.36      0.37       519
+           4       0.48      0.44      0.46       475
+           5       0.47      0.38      0.42       529
+           6       0.52      0.60      0.56       488
+           7       0.57      0.61      0.59       485
+           8       0.63      0.75      0.69       532
+           9       0.61      0.52      0.56       512
+
+    accuracy                           0.53      5000
+   macro avg       0.53      0.53      0.53      5000
+weighted avg       0.53      0.53      0.53      5000
+
+** the accuracy score of current trained model on the validation dataset is : 53.28%
+
+** the classification report of best saved model on the validation dataset is :
+              precision    recall  f1-score   support
+
+           0       0.57      0.64      0.60       493
+           1       0.63      0.64      0.63       488
+           2       0.45      0.37      0.41       479
+           3       0.38      0.38      0.38       519
+           4       0.46      0.49      0.47       475
+           5       0.44      0.40      0.42       529
+           6       0.57      0.57      0.57       488
+           7       0.60      0.58      0.59       485
+           8       0.66      0.71      0.69       532
+           9       0.57      0.58      0.58       512
+
+    accuracy                           0.54      5000
+   macro avg       0.53      0.54      0.53      5000
+weighted avg       0.53      0.54      0.53      5000
+
+** the accuracy score of best saved model  on the validation dataset is : 53.68%
+
+** the classification report of best saved model on the testing dataset is :
+              precision    recall  f1-score   support
+
+           0       0.57      0.64      0.60       493
+           1       0.63      0.64      0.63       488
+           2       0.45      0.37      0.41       479
+           3       0.38      0.38      0.38       519
+           4       0.46      0.49      0.47       475
+           5       0.44      0.40      0.42       529
+           6       0.57      0.57      0.57       488
+           7       0.60      0.58      0.59       485
+           8       0.66      0.71      0.69       532
+           9       0.57      0.58      0.58       512
+
+    accuracy                           0.54      5000
+   macro avg       0.53      0.54      0.53      5000
+weighted avg       0.53      0.54      0.53      5000
+
+** the accuracy score of best saved model  on the testing dataset is : 52.84%
+
+spent time is 0:07:50.947157
