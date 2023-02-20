@@ -1,6 +1,6 @@
-# 多种神经网络在多种图像分类任务上的性能对比以及对神经网络的优化
+# Image Processing Final Project
 
-## 目录介绍
+## Directory
 
 ```txt
 │  README.md
@@ -58,7 +58,7 @@
             MNIST.bin
 ```
 
-## 神经网络
+## Neural Network
 
 ### train
 
